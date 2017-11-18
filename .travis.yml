@@ -1,0 +1,20 @@
+dist: trusty
+sudo: required
+
+matrix:
+    include:
+        - language: c++
+          before_script:
+            - cd cpp
+            - mkdir build
+            - cd build
+          script:
+            - cmake ../ 
+            - make
+notifications:
+    email:
+        recipients:
+            - mike.h.bao@gmail.com
+        on_success: always
+        on_failure: always
+
