@@ -11,7 +11,7 @@ Travis CI is used to automatically build on Linux and Mac OSX. I assume Windows 
 ### Ubuntu 14.04+ Setup
 
 - apt-get install libboost-all-dev
-- apt-get install openimageio libopenimageio-dev
+- apt-get install libopenimageio1.3 libopenimageio-dev
 
 ### Mac OSX Setup  (Homebrew)
 
