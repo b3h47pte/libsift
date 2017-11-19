@@ -8,6 +8,16 @@
 
 Travis CI is used to automatically build on Linux and Mac OSX. I assume Windows can work with little to no modifications.
 
+### Ubuntu 14.04+ Setup
+
+- apt-get install libboost-all-dev
+- apt-get install openimageio libopenimageio-dev
+
+### Mac OSX Setup  (Homebrew)
+
+- brew install homebrew/science/openimageio
+- brew install boost
+
 ## Compilation and Installation
 
 Compilation and installation is done using CMake.
