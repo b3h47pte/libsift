@@ -1,1 +1,15 @@
 #!/bin/bash
+
+echo "Running install.sh..."
+
+if [[ ${TRAVIS_OS_NAME} == "linux" ]]; then
+    sudo apt-get -qq update
+    sudo apt-get install -y openimageio
+    sudo apt-get install -y libopenimageio-dev
+else if [[ ${TRAVIS_OS_NAME} == "osx" ]]; then
+    brew update
+    brew install homebrew/science/openimageio
+fi
+
+echo "    Running C++..."
+./cpp/scripts/install.sh
