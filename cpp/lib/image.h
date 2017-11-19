@@ -74,6 +74,34 @@ public:
      */
     bool operator!=(const Image& rhs) const;
 
+    /*! Retrieves width of image.
+     * @return Width of the image in pixels.
+     */
+    int getWidth() const { return _width; }
+
+    /*! Retrieves height of image.
+     * @return Height of the image in pixels.
+     */
+    int getHeight() const { return _height; }
+
+    /*! Retrieves the number of channels.
+     * @return Number of color channels.
+     */
+    int getChannels() const { return _channels; }
+
+    /*! Retrieves the size of the data buffer.
+     * @return Size of the data buffer in bytes.
+     */
+    size_t getBufferSize() const { return _data.size(); }
+
+    /*! Retrieves color data from the stored data.
+     * @param x The column of the image to query.
+     * @param y The row of the image to query.
+     * @param channel Which color channel to query.
+     * @return The element in the _data member indexed by x, y, and channel.
+     */
+    unsigned char getColor(int x, int y, int channel) const;
+
 private:
     std::vector<unsigned char> _data; 
     int _width;
@@ -91,6 +119,11 @@ inline const char* ImageIOException::what() const throw()
 inline bool Image::operator!=(const Image& rhs) const
 {
     return !(*this == rhs);
+}
+
+inline unsigned char Image::getColor(int x, int y, int channel) const
+{
+    return _data[channel + x * _channels + y * _channels * _width];
 }
 
 }

@@ -1,2 +1,3 @@
 *.swp
 usr/*
+*.DS_Store

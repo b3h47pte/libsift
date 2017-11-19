@@ -12,7 +12,7 @@ make -j4
 if [ $? -ne 0 ]; then
     exit 1
 fi
-make test ARGS=-j4
+make CTEST_OUTPUT_ON_FAILURE=1 test ARGS=-j4
 if [ $? -ne 0 ]; then
     exit 1
 fi
