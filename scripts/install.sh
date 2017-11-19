@@ -6,7 +6,7 @@ if [[ ${TRAVIS_OS_NAME} == "linux" ]]; then
     sudo apt-get -qq update
     sudo apt-get install -y openimageio
     sudo apt-get install -y libopenimageio-dev
-else if [[ ${TRAVIS_OS_NAME} == "osx" ]]; then
+elif [[ ${TRAVIS_OS_NAME} == "osx" ]]; then
     brew update
     brew install homebrew/science/openimageio
 fi
