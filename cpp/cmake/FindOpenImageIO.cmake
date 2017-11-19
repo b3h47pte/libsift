@@ -61,7 +61,6 @@ elseif(WIN32)
     )
 endif()
 
-MESSAGE(STATUS "FIND OIIO ${OIIO_BASE_DIR}")
 find_path(OIIO_INCLUDE_DIR
         OpenImageIO/oiioversion.h
     HINTS
@@ -73,7 +72,6 @@ find_path(OIIO_INCLUDE_DIR
     DOC
         "OpenImageIO headers path"
 )
-MESSAGE(STATUS "FIND OIIO 2 ${OIIO_INCLUDE_DIR}")
 
 list(APPEND OIIO_INCLUDE_DIRS ${OIIO_INCLUDE_DIR})
 

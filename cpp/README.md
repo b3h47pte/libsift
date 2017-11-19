@@ -3,31 +3,38 @@
 ## Requirements
 
 - C++11 compatible compiler (GCC 4.8.4+, Clang 3.3+, MSVC2015+).
-- OpenImageIO
-- Boost (for binaries and test).
+- CMake 3.1+
+- OpenImageIO 1.7+ (and its dependencies)
+- Boost 1.54+ (for binaries and test).
 
 Travis CI is used to automatically build on Linux and Mac OSX. I assume Windows can work with little to no modifications.
 
 ### Ubuntu 14.04+ Setup
 
-- apt-get install libboost-all-dev
-- apt-get install libopenimageio1.3 libopenimageio-dev
+Assuming the 'cpp' folder is your current working directory,
+
+```
+cd ../external
+./install_oiio.sh
+```
 
 ### Mac OSX Setup  (Homebrew)
 
-- brew install homebrew/science/openimageio
-- brew install boost
+```
+brew install homebrew/science/openimageio
+brew install boost
+```
 
 ## Compilation and Installation
 
 Compilation and installation is done using CMake.
 
 ```
-    mkdir build
-    cd build
-    cmake ../
-    make -jX
-    make install
+mkdir build
+cd build
+cmake ../
+make -jX
+make install
 ```
 ### CMake Configuration Options
 
