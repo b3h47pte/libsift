@@ -28,7 +28,7 @@ tar xvf oiio-Release-1.7.17.tar.gz
 cd oiio-Release-1.7.17
 mkdir build
 cd build
-cmake ../
+cmake ../ -DSTOP_ON_WARNING=OFF
 make -j4
 sudo make install
 cd ../../
