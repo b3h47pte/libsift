@@ -41,6 +41,8 @@ DoGScaleSpacePyramid::DoGScaleSpacePyramid(const Image& image, int octaves, floa
 
 void DoGScaleSpacePyramid::initialize(const Image& image)
 {
+    _dogs.resize(_octaves);
+
     Gaussian2D gaussian = create2DGaussian(_stddev);
 
     // Between each octave, the image shrinks in size by a factor of 2
@@ -65,6 +67,7 @@ void DoGScaleSpacePyramid::initialize(const Image& image)
                 currScaleImage = convolveGaussian2D(gaussian, nextOctaveImage);
             } else {
                 currScaleImage = convolveGaussian2D(gaussian, prevScaleImage);
+                _dogs[o].push_back(currScaleImage - prevScaleImage);
             }
 
             if (s == 4)  {

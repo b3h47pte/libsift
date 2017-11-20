@@ -64,7 +64,7 @@ public:
 private:
     /*! Difference of Gaussian images. Indexed first by octave, then by scale space sample.
      */
-    std::vector<std::vector<std::shared_ptr<Image> > > _dogs;
+    std::vector<std::vector<Image > > _dogs;
 
     int _octaves;
     float _stddev;

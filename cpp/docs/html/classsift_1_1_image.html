@@ -102,6 +102,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a642871d210562d6c97f610292321af43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a992846012650b6294155a12ae70501fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#a992846012650b6294155a12ae70501fe">operator!=</a> (const <a class="el" href="classsift_1_1_image.html">Image</a> &amp;rhs) const</td></tr>
 <tr class="separator:a992846012650b6294155a12ae70501fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd0fd640c3f7046eb06e6e632c109785"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsift_1_1_image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#afd0fd640c3f7046eb06e6e632c109785">operator+</a> (const <a class="el" href="classsift_1_1_image.html">Image</a> &amp;rhs) const</td></tr>
+<tr class="separator:afd0fd640c3f7046eb06e6e632c109785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab119b5feea00a1f3e189974278afc8fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsift_1_1_image.html">Image</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#ab119b5feea00a1f3e189974278afc8fc">operator+=</a> (const <a class="el" href="classsift_1_1_image.html">Image</a> &amp;rhs)</td></tr>
+<tr class="separator:ab119b5feea00a1f3e189974278afc8fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bfd310396c10b7bec0793db3b072c21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsift_1_1_image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#a9bfd310396c10b7bec0793db3b072c21">operator-</a> (const <a class="el" href="classsift_1_1_image.html">Image</a> &amp;rhs) const</td></tr>
+<tr class="separator:a9bfd310396c10b7bec0793db3b072c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3be439c53c02a34a102c56841357781f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsift_1_1_image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#a3be439c53c02a34a102c56841357781f">operator-</a> () const</td></tr>
+<tr class="separator:a3be439c53c02a34a102c56841357781f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96ebf0bede341ada422345f9f7a5af0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsift_1_1_image.html">Image</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#a96ebf0bede341ada422345f9f7a5af0e">operator-=</a> (const <a class="el" href="classsift_1_1_image.html">Image</a> &amp;rhs)</td></tr>
+<tr class="separator:a96ebf0bede341ada422345f9f7a5af0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03a409619658f44dd239a0b1cb0245a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#a03a409619658f44dd239a0b1cb0245a4">getWidth</a> () const</td></tr>
 <tr class="separator:a03a409619658f44dd239a0b1cb0245a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a978c302023176c7ebe56bbe46c670d3b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#a978c302023176c7ebe56bbe46c670d3b">getHeight</a> () const</td></tr>
@@ -561,6 +571,148 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if all members are different. False otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="afd0fd640c3f7046eb06e6e632c109785"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd0fd640c3f7046eb06e6e632c109785">&#9670;&nbsp;</a></span>operator+()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsift_1_1_image.html">Image</a> sift::Image::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsift_1_1_image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Add images element-wise. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td><a class="el" href="classsift_1_1_image.html" title="Called &#39;Image&#39; but in effect is can represent any 3D floating point data. ">Image</a> to perform the operation with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new image that where each data element has an addition operation performed. </dd></dl>
+
+</div>
+</div>
+<a id="ab119b5feea00a1f3e189974278afc8fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab119b5feea00a1f3e189974278afc8fc">&#9670;&nbsp;</a></span>operator+=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsift_1_1_image.html">Image</a> &amp; sift::Image::operator+= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsift_1_1_image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Add images element-wise. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td><a class="el" href="classsift_1_1_image.html" title="Called &#39;Image&#39; but in effect is can represent any 3D floating point data. ">Image</a> to perform the operation with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Self. </dd></dl>
+
+</div>
+</div>
+<a id="a9bfd310396c10b7bec0793db3b072c21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bfd310396c10b7bec0793db3b072c21">&#9670;&nbsp;</a></span>operator-() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsift_1_1_image.html">Image</a> sift::Image::operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsift_1_1_image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Subtract images element-wise. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td><a class="el" href="classsift_1_1_image.html" title="Called &#39;Image&#39; but in effect is can represent any 3D floating point data. ">Image</a> to perform the operation with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new image that where each data element has a subtraction operation performed. </dd></dl>
+
+</div>
+</div>
+<a id="a3be439c53c02a34a102c56841357781f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3be439c53c02a34a102c56841357781f">&#9670;&nbsp;</a></span>operator-() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsift_1_1_image.html">Image</a> sift::Image::operator- </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Negates the data buffer. </p><dl class="section return"><dt>Returns</dt><dd>An image with each data element being negated. </dd></dl>
+
+</div>
+</div>
+<a id="a96ebf0bede341ada422345f9f7a5af0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96ebf0bede341ada422345f9f7a5af0e">&#9670;&nbsp;</a></span>operator-=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsift_1_1_image.html">Image</a> &amp; sift::Image::operator-= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsift_1_1_image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Subtract images element-wise. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td><a class="el" href="classsift_1_1_image.html" title="Called &#39;Image&#39; but in effect is can represent any 3D floating point data. ">Image</a> to perform the operation with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Self. </dd></dl>
 
 </div>
 </div>

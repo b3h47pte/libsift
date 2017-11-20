@@ -79,6 +79,23 @@ bool Image::operator==(const Image& rhs) const
     return true;
 }
 
+Image& Image::operator+=(const Image& rhs)
+{
+    for (size_t i = 0; i < _data.size(); ++i) {
+        _data[i] += rhs._data[i];
+    }
+    return *this;
+}
+
+Image Image::operator-() const
+{
+    Image retImage(getWidth(), getHeight(), getChannels());
+    for (size_t i = 0; i < retImage._data.size(); ++i) {
+        retImage._data[i] = -_data[i];
+    }
+    return retImage;
+}
+
 Image resampleImage(const Image& image, float fx, float fy)
 {
     Image retImage(image);

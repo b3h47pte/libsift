@@ -82,6 +82,36 @@ public:
      */
     bool operator!=(const Image& rhs) const;
 
+    /*! Add images element-wise.
+     * @param[in] rhs Image to perform the operation with.
+     *  @return A new image that where each data element has an addition operation performed.
+     */
+    Image operator+(const Image& rhs) const;
+
+    /*! Add images element-wise.
+     * @param[in] rhs Image to perform the operation with.
+     * @return Self.
+     */
+    Image& operator+=(const Image& rhs);
+
+    /*! Subtract images element-wise.
+     *  @param[in] rhs Image to perform the operation with.
+     *  @return A new image that where each data element has a subtraction operation performed.
+     */
+    inline Image operator-(const Image& rhs) const { return *this + (-rhs); }
+
+    /*! Negates the data buffer.
+     *  @return An image with each data element being negated.
+     */
+    Image operator-() const;
+
+    /*! Subtract images element-wise.
+     * @param[in] rhs Image to perform the operation with.
+     * @return Self.
+     */
+    Image& operator-=(const Image& rhs);
+
+
     /*! Retrieves width of image.
      * @return Width of the image in pixels.
      */
@@ -154,6 +184,19 @@ inline const char* ImageIOException::what() const throw()
 inline bool Image::operator!=(const Image& rhs) const
 {
     return !(*this == rhs);
+}
+
+inline Image Image::operator+(const Image& rhs) const
+{
+    Image retImage(*this);
+    retImage += rhs;
+    return retImage;
+}
+
+inline Image& Image::operator-=(const Image& rhs)
+{
+    *this += (-rhs);
+    return *this;
 }
 
 inline int Image::getBufferIndex(int x, int y, int channel) const
