@@ -65,6 +65,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classsift_1_1_image-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -72,7 +73,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Wrapper class around the functionality that OpenImageIO provides.  
+<p>Called '<a class="el" href="classsift_1_1_image.html" title="Called &#39;Image&#39; but in effect is can represent any 3D floating point data. ">Image</a>' but in effect is can represent any 3D floating point data.  
  <a href="classsift_1_1_image.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="image_8h_source.html">image.h</a>&gt;</code></p>
@@ -81,6 +82,14 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a32c9a8f6efb181e0ad8ef982aa385416"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#a32c9a8f6efb181e0ad8ef982aa385416">Image</a> ()</td></tr>
 <tr class="separator:a32c9a8f6efb181e0ad8ef982aa385416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1191261605974eaba14dbeb1aabc555f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#a1191261605974eaba14dbeb1aabc555f">Image</a> (const <a class="el" href="classsift_1_1_image.html">Image</a> &amp;other)=default</td></tr>
+<tr class="separator:a1191261605974eaba14dbeb1aabc555f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada6e08bc48643fdbffbd4b1023fea1d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsift_1_1_image.html">Image</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#ada6e08bc48643fdbffbd4b1023fea1d6">operator=</a> (const <a class="el" href="classsift_1_1_image.html">Image</a> &amp;other)=default</td></tr>
+<tr class="separator:ada6e08bc48643fdbffbd4b1023fea1d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a03f2338c40eec9bc93f70191123219"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#a5a03f2338c40eec9bc93f70191123219">Image</a> (<a class="el" href="classsift_1_1_image.html">Image</a> &amp;&amp;other)=default</td></tr>
+<tr class="separator:a5a03f2338c40eec9bc93f70191123219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f3e4f1a59a9826b3068af2da27dc4f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsift_1_1_image.html">Image</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#a5f3e4f1a59a9826b3068af2da27dc4f4">operator=</a> (<a class="el" href="classsift_1_1_image.html">Image</a> &amp;&amp;other)=default</td></tr>
+<tr class="separator:a5f3e4f1a59a9826b3068af2da27dc4f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac42645300777341adf138e2864d3e563"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#ac42645300777341adf138e2864d3e563">Image</a> (const int width, const int height, const int channels)</td></tr>
 <tr class="separator:ac42645300777341adf138e2864d3e563"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7731fbb1c9bde3c20b13eb2adea9bab2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#a7731fbb1c9bde3c20b13eb2adea9bab2">resizeImage</a> (const int width, const int height, const int channels)</td></tr>
@@ -89,11 +98,34 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7e85722e3dd51611543f8585b01b9e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a946682fe3300a565363e66e52e8d24cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#a946682fe3300a565363e66e52e8d24cd">saveToFile</a> (const std::string &amp;fname) const</td></tr>
 <tr class="separator:a946682fe3300a565363e66e52e8d24cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a642871d210562d6c97f610292321af43"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#a642871d210562d6c97f610292321af43">operator==</a> (const <a class="el" href="classsift_1_1_image.html">Image</a> &amp;rhs) const</td></tr>
+<tr class="separator:a642871d210562d6c97f610292321af43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a992846012650b6294155a12ae70501fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#a992846012650b6294155a12ae70501fe">operator!=</a> (const <a class="el" href="classsift_1_1_image.html">Image</a> &amp;rhs) const</td></tr>
+<tr class="separator:a992846012650b6294155a12ae70501fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03a409619658f44dd239a0b1cb0245a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#a03a409619658f44dd239a0b1cb0245a4">getWidth</a> () const</td></tr>
+<tr class="separator:a03a409619658f44dd239a0b1cb0245a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a978c302023176c7ebe56bbe46c670d3b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#a978c302023176c7ebe56bbe46c670d3b">getHeight</a> () const</td></tr>
+<tr class="separator:a978c302023176c7ebe56bbe46c670d3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec9d89e8c8bcdabdfe3d447c4908e8a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#aec9d89e8c8bcdabdfe3d447c4908e8a9">getChannels</a> () const</td></tr>
+<tr class="separator:aec9d89e8c8bcdabdfe3d447c4908e8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade1a65233665717683bfde287ab47013"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#ade1a65233665717683bfde287ab47013">getBufferSize</a> () const</td></tr>
+<tr class="separator:ade1a65233665717683bfde287ab47013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08b4de44521167b458208f8c668bd423"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#a08b4de44521167b458208f8c668bd423">getColor</a> (int x, int y, int channel) const</td></tr>
+<tr class="separator:a08b4de44521167b458208f8c668bd423"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d16b71ee672711604813e65f6ec464b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#a1d16b71ee672711604813e65f6ec464b">setColor</a> (float value, int x, int y, int channel)</td></tr>
+<tr class="separator:a1d16b71ee672711604813e65f6ec464b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc0f7bd016779ea265e2c6616c02afe8"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#afc0f7bd016779ea265e2c6616c02afe8">getCastedColor</a> (int x, int y, int channel) const</td></tr>
+<tr class="separator:afc0f7bd016779ea265e2c6616c02afe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aa216c98de08be61a09e35ae79b576c43"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#aa216c98de08be61a09e35ae79b576c43">getBufferIndex</a> (int x, int y, int channel) const</td></tr>
+<tr class="separator:aa216c98de08be61a09e35ae79b576c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:afcf78c05f9344b528204234c5d5bf9f7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#afcf78c05f9344b528204234c5d5bf9f7">_data</a></td></tr>
-<tr class="separator:afcf78c05f9344b528204234c5d5bf9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b4c3478bda4ad20f285216397e995ed"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#a8b4c3478bda4ad20f285216397e995ed">_data</a></td></tr>
+<tr class="separator:a8b4c3478bda4ad20f285216397e995ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24a9f233687e18b3cd2c2e4f2f54b897"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#a24a9f233687e18b3cd2c2e4f2f54b897">_width</a></td></tr>
 <tr class="separator:a24a9f233687e18b3cd2c2e4f2f54b897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae895ffbd6b92f48b9208a5afa19cb6b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html#ae895ffbd6b92f48b9208a5afa19cb6b0">_height</a></td></tr>
@@ -102,11 +134,11 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ab7ebc09b7f2e8e111a703b9e296399a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Wrapper class around the functionality that OpenImageIO provides. </p>
-<p>A simple image class that stores byte image data along with the size of the image. </p>
+<div class="textblock"><p>Called '<a class="el" href="classsift_1_1_image.html" title="Called &#39;Image&#39; but in effect is can represent any 3D floating point data. ">Image</a>' but in effect is can represent any 3D floating point data. </p>
+<p>Stores a tensor of size (width, height, channels). Provides functionality to load in an image OpenImageIO. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a32c9a8f6efb181e0ad8ef982aa385416"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32c9a8f6efb181e0ad8ef982aa385416">&#9670;&nbsp;</a></span>Image() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a32c9a8f6efb181e0ad8ef982aa385416">&#9670;&nbsp;</a></span>Image() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -123,8 +155,60 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a1191261605974eaba14dbeb1aabc555f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1191261605974eaba14dbeb1aabc555f">&#9670;&nbsp;</a></span>Image() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sift::Image::Image </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsift_1_1_image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5a03f2338c40eec9bc93f70191123219"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a03f2338c40eec9bc93f70191123219">&#9670;&nbsp;</a></span>Image() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sift::Image::Image </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsift_1_1_image.html">Image</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac42645300777341adf138e2864d3e563"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac42645300777341adf138e2864d3e563">&#9670;&nbsp;</a></span>Image() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac42645300777341adf138e2864d3e563">&#9670;&nbsp;</a></span>Image() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,6 +250,263 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa216c98de08be61a09e35ae79b576c43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa216c98de08be61a09e35ae79b576c43">&#9670;&nbsp;</a></span>getBufferIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sift::Image::getBufferIndex </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>channel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Retrieves the appropriate idex into the buffer. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The column of the image to query. </td></tr>
+    <tr><td class="paramname">y</td><td>The row of the image to query. </td></tr>
+    <tr><td class="paramname">channel</td><td>Which color channel to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The sequential index into the buffer to for (x, y, channel). </dd></dl>
+
+</div>
+</div>
+<a id="ade1a65233665717683bfde287ab47013"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade1a65233665717683bfde287ab47013">&#9670;&nbsp;</a></span>getBufferSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t sift::Image::getBufferSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Retrieves the size of the data buffer. </p><dl class="section return"><dt>Returns</dt><dd>Size of the data buffer in bytes. </dd></dl>
+
+</div>
+</div>
+<a id="afc0f7bd016779ea265e2c6616c02afe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc0f7bd016779ea265e2c6616c02afe8">&#9670;&nbsp;</a></span>getCastedColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char sift::Image::getCastedColor </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>channel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Retrieves data from the stored data but casted to a byte. Conversion is done by multiplying by 255 and clamping to be between 0 and 255. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The column of the image to query. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The row of the image to query. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">channel</td><td>Which color channel to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The element in the _data member indexed by x, y, and channel casted. </dd></dl>
+
+</div>
+</div>
+<a id="aec9d89e8c8bcdabdfe3d447c4908e8a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec9d89e8c8bcdabdfe3d447c4908e8a9">&#9670;&nbsp;</a></span>getChannels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sift::Image::getChannels </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Retrieves the number of channels. </p><dl class="section return"><dt>Returns</dt><dd>Number of color channels. </dd></dl>
+
+</div>
+</div>
+<a id="a08b4de44521167b458208f8c668bd423"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08b4de44521167b458208f8c668bd423">&#9670;&nbsp;</a></span>getColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float sift::Image::getColor </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>channel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Retrieves data from the stored data. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The column of the image to query. </td></tr>
+    <tr><td class="paramname">y</td><td>The row of the image to query. </td></tr>
+    <tr><td class="paramname">channel</td><td>Which color channel to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The element in the _data member indexed by x, y, and channel. </dd></dl>
+
+</div>
+</div>
+<a id="a978c302023176c7ebe56bbe46c670d3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a978c302023176c7ebe56bbe46c670d3b">&#9670;&nbsp;</a></span>getHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sift::Image::getHeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Retrieves height of image. </p><dl class="section return"><dt>Returns</dt><dd>Height of the image in pixels. </dd></dl>
+
+</div>
+</div>
+<a id="a03a409619658f44dd239a0b1cb0245a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03a409619658f44dd239a0b1cb0245a4">&#9670;&nbsp;</a></span>getWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sift::Image::getWidth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Retrieves width of image. </p><dl class="section return"><dt>Returns</dt><dd>Width of the image in pixels. </dd></dl>
+
+</div>
+</div>
 <a id="a7e85722e3dd51611543f8585b01b9e06"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7e85722e3dd51611543f8585b01b9e06">&#9670;&nbsp;</a></span>loadFromFile()</h2>
 
@@ -187,6 +528,116 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a992846012650b6294155a12ae70501fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a992846012650b6294155a12ae70501fe">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sift::Image::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsift_1_1_image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Checks for inequality in size and data between the two images. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>Other image to compare to. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if all members are different. False otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="ada6e08bc48643fdbffbd4b1023fea1d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada6e08bc48643fdbffbd4b1023fea1d6">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsift_1_1_image.html">Image</a>&amp; sift::Image::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsift_1_1_image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f3e4f1a59a9826b3068af2da27dc4f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f3e4f1a59a9826b3068af2da27dc4f4">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsift_1_1_image.html">Image</a>&amp; sift::Image::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsift_1_1_image.html">Image</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a642871d210562d6c97f610292321af43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a642871d210562d6c97f610292321af43">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sift::Image::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsift_1_1_image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Checks for equality in size and data between the two images. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>Other image to compare to. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if all members are equivalent. False otherwise. </dd></dl>
 
 </div>
 </div>
@@ -221,7 +672,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Resizes the image to contain the specified amount of data. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Resizes the buffer to contain the specified amount of data. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>Width of the image. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">height</td><td>Height of the image. </td></tr>
@@ -256,6 +707,63 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a1d16b71ee672711604813e65f6ec464b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d16b71ee672711604813e65f6ec464b">&#9670;&nbsp;</a></span>setColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sift::Image::setColor </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>channel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets data into the underlying buffer. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>The value to set in the buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>The column of the image to set. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>The row of the image to set. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">channel</td><td>Which color channel to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="ab7ebc09b7f2e8e111a703b9e296399a4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab7ebc09b7f2e8e111a703b9e296399a4">&#9670;&nbsp;</a></span>_channels</h2>
@@ -279,8 +787,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="afcf78c05f9344b528204234c5d5bf9f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcf78c05f9344b528204234c5d5bf9f7">&#9670;&nbsp;</a></span>_data</h2>
+<a id="a8b4c3478bda4ad20f285216397e995ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b4c3478bda4ad20f285216397e995ed">&#9670;&nbsp;</a></span>_data</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -289,7 +797,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;unsigned char&gt; sift::Image::_data</td>
+          <td class="memname">std::vector&lt;float&gt; sift::Image::_data</td>
         </tr>
       </table>
   </td>

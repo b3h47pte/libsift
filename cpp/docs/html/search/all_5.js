@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main',['main',['../detect__sift_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'detect_sift.cpp']]]
+  ['loadfromfile',['loadFromFile',['../classsift_1_1_image.html#a7e85722e3dd51611543f8585b01b9e06',1,'sift::Image']]]
 ];

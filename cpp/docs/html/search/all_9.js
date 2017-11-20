@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['_7eimageioexception',['~ImageIOException',['../classsift_1_1_image_i_o_exception.html#a4bae169ed288d897122cc8ab443cc87b',1,'sift::ImageIOException']]]
+  ['savetofile',['saveToFile',['../classsift_1_1_image.html#a946682fe3300a565363e66e52e8d24cd',1,'sift::Image']]],
+  ['setcolor',['setColor',['../classsift_1_1_image.html#a1d16b71ee672711604813e65f6ec464b',1,'sift::Image']]],
+  ['sift',['sift',['../namespacesift.html',1,'']]]
 ];

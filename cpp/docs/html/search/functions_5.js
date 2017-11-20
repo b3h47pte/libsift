@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['what',['what',['../classsift_1_1_image_i_o_exception.html#af4e6e13b16995d09698980663c9022e5',1,'sift::ImageIOException']]]
+  ['main',['main',['../detect__sift_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'detect_sift.cpp']]]
 ];

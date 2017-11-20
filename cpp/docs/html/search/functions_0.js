@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['image',['Image',['../classsift_1_1_image.html#a32c9a8f6efb181e0ad8ef982aa385416',1,'sift::Image::Image()'],['../classsift_1_1_image.html#ac42645300777341adf138e2864d3e563',1,'sift::Image::Image(const int width, const int height, const int channels)']]],
-  ['imageioexception',['ImageIOException',['../classsift_1_1_image_i_o_exception.html#a97fdebe12d98730c96511581fe257df5',1,'sift::ImageIOException']]]
+  ['convolvegaussian2d',['convolveGaussian2D',['../namespacesift.html#a4359b1ea535afb88f896a109a51d1203',1,'sift']]],
+  ['convolvegaussian2dinplace',['convolveGaussian2DInPlace',['../namespacesift.html#afeb2442f8005d318eab39ac8d986ac3e',1,'sift']]],
+  ['create2dgaussian',['create2DGaussian',['../namespacesift.html#aca14ec09e0a3f6a5da07c84d4fc5faab',1,'sift']]]
 ];

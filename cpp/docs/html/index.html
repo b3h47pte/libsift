@@ -66,11 +66,15 @@ $(function() {
 <div class="textblock"><h2>Requirements</h2>
 <ul>
 <li>C++11 compatible compiler (GCC 4.8.4+, Clang 3.3+, MSVC2015+).</li>
-<li>OpenImageIO</li>
-<li>Boost (for binaries and test).</li>
+<li>CMake 3.1+</li>
+<li>OpenImageIO 1.7+ (and its dependencies)</li>
+<li>Boost 1.54+ (for binaries and test).</li>
 </ul>
 <p>Travis CI is used to automatically build on Linux and Mac OSX. I assume Windows can work with little to no modifications.</p>
-<h2>Compilation and Installation</h2>
+<h3>Ubuntu 14.04+ Setup</h3>
+<p>Assuming the 'cpp' folder is your current working directory,</p>
+<div class="fragment"><div class="line">cd ../external</div><div class="line">./install_oiio.sh</div></div><!-- fragment --><h3>Mac OSX Setup (Homebrew)</h3>
+<div class="fragment"><div class="line">brew install homebrew/science/openimageio</div><div class="line">brew install boost</div></div><!-- fragment --><h2>Compilation and Installation</h2>
 <p>Compilation and installation is done using CMake.</p>
 <div class="fragment"><div class="line">mkdir build</div><div class="line">cd build</div><div class="line">cmake ../</div><div class="line">make -jX</div><div class="line">make install</div></div><!-- fragment --> <h3>CMake Configuration Options</h3>
 <ul>

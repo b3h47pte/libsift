@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['image',['Image',['../classsift_1_1_image.html',1,'sift']]],
-  ['imageioexception',['ImageIOException',['../classsift_1_1_image_i_o_exception.html',1,'sift']]]
+  ['dogscalespacepyramid',['DoGScaleSpacePyramid',['../classsift_1_1_do_g_scale_space_pyramid.html',1,'sift']]]
 ];

@@ -1,7 +1,13 @@
 var searchData=
 [
-  ['image',['Image',['../classsift_1_1_image.html',1,'sift::Image'],['../classsift_1_1_image.html#a32c9a8f6efb181e0ad8ef982aa385416',1,'sift::Image::Image()'],['../classsift_1_1_image.html#ac42645300777341adf138e2864d3e563',1,'sift::Image::Image(const int width, const int height, const int channels)']]],
-  ['image_2ecpp',['image.cpp',['../image_8cpp.html',1,'']]],
-  ['image_2eh',['image.h',['../image_8h.html',1,'']]],
-  ['imageioexception',['ImageIOException',['../classsift_1_1_image_i_o_exception.html',1,'sift::ImageIOException'],['../classsift_1_1_image_i_o_exception.html#a97fdebe12d98730c96511581fe257df5',1,'sift::ImageIOException::ImageIOException()']]]
+  ['gaussian_2ecpp',['gaussian.cpp',['../gaussian_8cpp.html',1,'']]],
+  ['gaussian_2eh',['gaussian.h',['../gaussian_8h.html',1,'']]],
+  ['gaussian2d',['Gaussian2D',['../classsift_1_1_gaussian2_d.html',1,'sift::Gaussian2D'],['../classsift_1_1_gaussian2_d.html#afa01cf42e571b9b38fb77724899a5b86',1,'sift::Gaussian2D::Gaussian2D()']]],
+  ['getbufferindex',['getBufferIndex',['../classsift_1_1_image.html#aa216c98de08be61a09e35ae79b576c43',1,'sift::Image']]],
+  ['getbuffersize',['getBufferSize',['../classsift_1_1_image.html#ade1a65233665717683bfde287ab47013',1,'sift::Image']]],
+  ['getcastedcolor',['getCastedColor',['../classsift_1_1_image.html#afc0f7bd016779ea265e2c6616c02afe8',1,'sift::Image']]],
+  ['getchannels',['getChannels',['../classsift_1_1_image.html#aec9d89e8c8bcdabdfe3d447c4908e8a9',1,'sift::Image']]],
+  ['getcolor',['getColor',['../classsift_1_1_image.html#a08b4de44521167b458208f8c668bd423',1,'sift::Image']]],
+  ['getheight',['getHeight',['../classsift_1_1_image.html#a978c302023176c7ebe56bbe46c670d3b',1,'sift::Image']]],
+  ['getwidth',['getWidth',['../classsift_1_1_image.html#a03a409619658f44dd239a0b1cb0245a4',1,'sift::Image']]]
 ];

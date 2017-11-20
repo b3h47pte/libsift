@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['readme_2emd',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
-  ['resizeimage',['resizeImage',['../classsift_1_1_image.html#a7731fbb1c9bde3c20b13eb2adea9bab2',1,'sift::Image']]]
+  ['main',['main',['../detect__sift_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'detect_sift.cpp']]]
 ];

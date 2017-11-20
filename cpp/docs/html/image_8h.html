@@ -65,14 +65,16 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">image.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;exception&gt;</code><br />
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
+<code>#include &lt;stdexcept&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div>
 <p><a href="image_8h_source.html">Go to the source code of this file.</a></p>
@@ -80,15 +82,23 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image_i_o_exception.html">sift::ImageIOException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An exception class that gets thrown by the <a class="el" href="classsift_1_1_image.html" title="Called &#39;Image&#39; but in effect is can represent any 3D floating point data. ">Image</a> class during IO operations.  <a href="classsift_1_1_image_i_o_exception.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html">sift::Image</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper class around the functionality that OpenImageIO provides.  <a href="classsift_1_1_image.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called '<a class="el" href="classsift_1_1_image.html" title="Called &#39;Image&#39; but in effect is can represent any 3D floating point data. ">Image</a>' but in effect is can represent any 3D floating point data.  <a href="classsift_1_1_image.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacesift"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesift.html">sift</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a026460499a57f1bf2cfacbce9ceb229f"><td class="memItemLeft" align="right" valign="top">Image&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesift.html#a026460499a57f1bf2cfacbce9ceb229f">sift::resampleImage</a> (const Image &amp;image, float fx, float fy)</td></tr>
+<tr class="separator:a026460499a57f1bf2cfacbce9ceb229f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e9517c004ef4928a588c05325d1d5b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesift.html#a7e9517c004ef4928a588c05325d1d5b3">sift::resampleImageInPlace</a> (Image *image, float fx, float fy)</td></tr>
+<tr class="separator:a7e9517c004ef4928a588c05325d1d5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

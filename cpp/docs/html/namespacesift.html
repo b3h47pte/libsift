@@ -60,7 +60,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">sift Namespace Reference</div>  </div>
 </div><!--header-->
@@ -68,12 +69,204 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_do_g_scale_space_pyramid.html">DoGScaleSpacePyramid</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_gaussian2_d.html">Gaussian2D</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image.html">Image</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper class around the functionality that OpenImageIO provides.  <a href="classsift_1_1_image.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called '<a class="el" href="classsift_1_1_image.html" title="Called &#39;Image&#39; but in effect is can represent any 3D floating point data. ">Image</a>' but in effect is can represent any 3D floating point data.  <a href="classsift_1_1_image.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsift_1_1_image_i_o_exception.html">ImageIOException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An exception class that gets thrown by the <a class="el" href="classsift_1_1_image.html" title="Called &#39;Image&#39; but in effect is can represent any 3D floating point data. ">Image</a> class during IO operations.  <a href="classsift_1_1_image_i_o_exception.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aca14ec09e0a3f6a5da07c84d4fc5faab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsift_1_1_gaussian2_d.html">Gaussian2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesift.html#aca14ec09e0a3f6a5da07c84d4fc5faab">create2DGaussian</a> (const float stddev)</td></tr>
+<tr class="separator:aca14ec09e0a3f6a5da07c84d4fc5faab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4359b1ea535afb88f896a109a51d1203"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsift_1_1_image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesift.html#a4359b1ea535afb88f896a109a51d1203">convolveGaussian2D</a> (const <a class="el" href="classsift_1_1_gaussian2_d.html">Gaussian2D</a> &amp;gaussian, const <a class="el" href="classsift_1_1_image.html">Image</a> &amp;image)</td></tr>
+<tr class="separator:a4359b1ea535afb88f896a109a51d1203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeb2442f8005d318eab39ac8d986ac3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesift.html#afeb2442f8005d318eab39ac8d986ac3e">convolveGaussian2DInPlace</a> (const <a class="el" href="classsift_1_1_gaussian2_d.html">Gaussian2D</a> &amp;gaussian, <a class="el" href="classsift_1_1_image.html">Image</a> *image)</td></tr>
+<tr class="separator:afeb2442f8005d318eab39ac8d986ac3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a026460499a57f1bf2cfacbce9ceb229f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsift_1_1_image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesift.html#a026460499a57f1bf2cfacbce9ceb229f">resampleImage</a> (const <a class="el" href="classsift_1_1_image.html">Image</a> &amp;image, float fx, float fy)</td></tr>
+<tr class="separator:a026460499a57f1bf2cfacbce9ceb229f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e9517c004ef4928a588c05325d1d5b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesift.html#a7e9517c004ef4928a588c05325d1d5b3">resampleImageInPlace</a> (<a class="el" href="classsift_1_1_image.html">Image</a> *image, float fx, float fy)</td></tr>
+<tr class="separator:a7e9517c004ef4928a588c05325d1d5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a4359b1ea535afb88f896a109a51d1203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4359b1ea535afb88f896a109a51d1203">&#9670;&nbsp;</a></span>convolveGaussian2D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsift_1_1_image.html">Image</a> sift::convolveGaussian2D </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsift_1_1_gaussian2_d.html">Gaussian2D</a> &amp;&#160;</td>
+          <td class="paramname"><em>gaussian</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classsift_1_1_image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Convolve a 2D Gaussian with an image while taking advantage of the fact that the kernel is separable. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gaussian</td><td>The Gaussian to use for convolution. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td>The image to convolve the Gaussian with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new image that contains the convolved image data. </dd></dl>
+
+</div>
+</div>
+<a id="afeb2442f8005d318eab39ac8d986ac3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeb2442f8005d318eab39ac8d986ac3e">&#9670;&nbsp;</a></span>convolveGaussian2DInPlace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sift::convolveGaussian2DInPlace </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsift_1_1_gaussian2_d.html">Gaussian2D</a> &amp;&#160;</td>
+          <td class="paramname"><em>gaussian</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classsift_1_1_image.html">Image</a> *&#160;</td>
+          <td class="paramname"><em>image</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Convolve a 2D Gaussian with an image while taking advantage of the fact that the kernel is separable. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gaussian</td><td>The Gaussian to use for convolution. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">image</td><td>The image to convolve the Gaussian with. Result is stored in this image. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aca14ec09e0a3f6a5da07c84d4fc5faab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca14ec09e0a3f6a5da07c84d4fc5faab">&#9670;&nbsp;</a></span>create2DGaussian()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsift_1_1_gaussian2_d.html">Gaussian2D</a> sift::create2DGaussian </td>
+          <td>(</td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>stddev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates a 2D Gaussian operator that can be convolved with an image. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stddev</td><td>The 'sigma' of the Gaussian function. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An '<a class="el" href="classsift_1_1_image.html" title="Called &#39;Image&#39; but in effect is can represent any 3D floating point data. ">Image</a>' object that contains an appropriately sized 2D Gaussian operator. </dd></dl>
+
+</div>
+</div>
+<a id="a026460499a57f1bf2cfacbce9ceb229f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a026460499a57f1bf2cfacbce9ceb229f">&#9670;&nbsp;</a></span>resampleImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsift_1_1_image.html">Image</a> sift::resampleImage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsift_1_1_image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Performs a naive resample of the image. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td><a class="el" href="classsift_1_1_image.html" title="Called &#39;Image&#39; but in effect is can represent any 3D floating point data. ">Image</a> to resample. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fx</td><td>Gets every fx columns. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fy</td><td>Gets every fy rows. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resampled image. </dd></dl>
+
+</div>
+</div>
+<a id="a7e9517c004ef4928a588c05325d1d5b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e9517c004ef4928a588c05325d1d5b3">&#9670;&nbsp;</a></span>resampleImageInPlace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sift::resampleImageInPlace </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsift_1_1_image.html">Image</a> *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
