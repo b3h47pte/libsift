@@ -66,30 +66,30 @@ TEST_CASE("Image read color correctness", "[imageio]") {
 
     SECTION("redsquare.png") {
         image.loadFromFile("../../data/redsquare.png");
-        CHECK(image.getColor(161, 158, 0) == 255);
-        CHECK(image.getColor(161, 158, 1) == 0);
-        CHECK(image.getColor(161, 158, 2) == 0);
+        CHECK(image.getCastedColor(161, 158, 0) == 255);
+        CHECK(image.getCastedColor(161, 158, 1) == 0);
+        CHECK(image.getCastedColor(161, 158, 2) == 0);
     }
 
     SECTION("hedgehog.tiff") {
         image.loadFromFile("../../data/hedgehog.tiff");
-        CHECK(image.getColor(2873, 882, 0) == 105);
-        CHECK(image.getColor(2873, 882, 1) == 158);
-        CHECK(image.getColor(2873, 882, 2) == 86);
+        CHECK(image.getCastedColor(2873, 882, 0) == 105);
+        CHECK(image.getCastedColor(2873, 882, 1) == 158);
+        CHECK(image.getCastedColor(2873, 882, 2) == 86);
     }
 
     SECTION("league.jpg") {
         image.loadFromFile("../../data/league.jpg");
-        CHECK(image.getColor(1032, 669, 0) == 157);
-        CHECK(image.getColor(1032, 669, 1) == 211);
-        CHECK(image.getColor(1032, 669, 2) == 151);
+        CHECK(image.getCastedColor(1032, 669, 0) == 157);
+        CHECK(image.getCastedColor(1032, 669, 1) == 211);
+        CHECK(image.getCastedColor(1032, 669, 2) == 151);
     }
 
     SECTION("anime.bmp") {
         image.loadFromFile("../../data/anime.bmp");
-        CHECK(image.getColor(900, 861, 0) == 76);
-        CHECK(image.getColor(900, 861, 1) == 121);
-        CHECK(image.getColor(900, 861, 2) == 144);
+        CHECK(image.getCastedColor(900, 861, 0) == 76);
+        CHECK(image.getCastedColor(900, 861, 1) == 121);
+        CHECK(image.getCastedColor(900, 861, 2) == 144);
     }
 
 }

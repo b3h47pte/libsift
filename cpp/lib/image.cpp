@@ -3,6 +3,7 @@
 // found in the LICENSE file. The SIFT algorithm is
 // patented and its use for commercial applications must be licensed.
 // See the LICENSE file for details.
+#include <cassert>
 #include "image.h"
 #include <OpenImageIO/imageio.h>
 
@@ -36,7 +37,7 @@ void Image::loadFromFile(const std::string& fname)
 
     const OIIO::ImageSpec& spec = in->spec();
     resizeImage(spec.width, spec.height, spec.nchannels);
-    in->read_image(OIIO::TypeDesc::UINT8, &_data[0]);
+    in->read_image(OIIO::TypeDesc::FLOAT, &_data[0]);
     in->close();
     OIIO::ImageInput::destroy(in);
 }
@@ -50,7 +51,7 @@ void Image::saveToFile(const std::string& fname) const
 
     OIIO::ImageSpec spec(_width, _height, _channels, OIIO::TypeDesc::UINT8);
     out->open(fname, spec);
-    out->write_image(OIIO::TypeDesc::UINT8, _data.data());
+    out->write_image(OIIO::TypeDesc::FLOAT, _data.data());
     out->close();
     OIIO::ImageOutput::destroy(out);
 }
@@ -76,6 +77,33 @@ bool Image::operator==(const Image& rhs) const
     }
 
     return true;
+}
+
+Image resampleImage(const Image& image, float fx, float fy)
+{
+    Image retImage(image);
+    resampleImageInPlace(&retImage, fx, fy);
+    return retImage;
+}
+
+void resampleImageInPlace(Image* image, float fx, float fy)
+{
+    assert(image != nullptr);
+
+    const int newWidth = static_cast<int>(image->getWidth() / fx);
+    const int newHeight = static_cast<int>(image->getHeight() / fy);
+
+    Image tmpImage(newWidth, newHeight, image->getChannels());
+    for (int y = 0; y < tmpImage.getHeight(); ++y) {
+        for (int x = 0; x < tmpImage.getWidth(); ++x) {
+            for (int c = 0; c < tmpImage.getChannels(); ++c) {
+                tmpImage.setColor(image->getColor(x * fx, y * fy, c),
+                                  x, y, c);
+            }
+        }
+    }
+
+    *image = std::move(tmpImage);
 }
 
 }
